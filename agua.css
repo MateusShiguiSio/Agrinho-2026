@@ -1,0 +1,312 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Alterado para a fonte do index */
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbe7; /* Fundo levemente amarelado do index */
+    color: #424242; /* Cor de texto principal do index */
+    line-height: 1.6;
+}
+
+.cabecalho-agua {
+    background-color: #202020 !important; /* Mantido do index */
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(52, 170, 125); /* Mantido do index */
+    text-align: center; /* Adicionado para consistência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado para consistência */
+}
+
+.cabecalho-agua h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ebe9e9; /* Mantido do index */
+}
+
+.cabecalho-agua h3 {
+    color: #e7e5e5; /* Mantido do index */
+    font-size: 1.2rem;
+    text-shadow: 3px 5px 5px #000000;
+    display: block; /* Garante que o subtítulo fique em uma nova linha */
+}
+
+.navbar {
+    background-color: rgba(212, 237, 218, 0.7) !important; /* Fundo da navbar igual ao index */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    font-weight: bold !important;
+    color: #198754 !important; /* Cor do link normal igual ao index */
+    margin-right: 20px; /* Adicionado para consistência */
+    padding: 15px; /* Adicionado para consistência */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    font-weight: bold !important;
+    color: #155724 !important; /* Cor do link ao passar o mouse igual ao index */
+}
+
+.nav-link.active {
+    font-weight: bold !important;
+    color: #155724 !important; /* Cor do link ativo igual ao index */
+}
+
+.typing-animation {
+    display: inline-block;
+}
+
+.typing-animation span {
+    opacity: 0;
+}
+
+/* Animation Keyframes */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); /* Start completely off to the right */
+      opacity: 0; /* Start completely transparent */
+    }
+    100% {
+      transform: translateX(0); /* End at its original position */
+      opacity: 1; /* End fully opaque */
+    }
+  }
+  
+  /* Apply the animation to the navbar */
+  .navbar-slide-in {
+    animation: slideInFromRight 1s ease-out forwards; /* 1s duration, ease-out timing, keep final state */
+    /* Initially hide the navbar to prevent flicker before animation */
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+@keyframes typeWriter {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.slide-in-left {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-left.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-in-right {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-right.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    color: #0d8529; /* Cor do texto de fade-in para verde */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.jump-letters {
+    display: inline-block;
+}
+
+.jump-letters span {
+    display: inline-block;
+    animation: jump 0.5s ease-in-out infinite alternate;
+    text-shadow: 5px 10px 5px #000000;
+    font-size: 80px; /* Adicionado para consistência com o index */
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Adicionando delays individuais para um efeito mais interessante */
+.jump-letters span:nth-child(1) { animation-delay: 0s; }
+.jump-letters span:nth-child(2) { animation-delay: 0.1s; }
+.jump-letters span:nth-child(3) { animation-delay: 0.2s; }
+.jump-letters span:nth-child(4) { animation-delay: 0.3s; }
+.jump-letters span:nth-child(5) { animation-delay: 0.4s; }
+.jump-letters span:nth-child(6) { animation-delay: 0.5s; }
+.jump-letters span:nth-child(7) { animation-delay: 0.6s; }
+.jump-letters span:nth-child(8) { animation-delay: 0.7s; }
+.jump-letters span:nth-child(9) { animation-delay: 0.8s; }
+.jump-letters span:nth-child(10) { animation-delay: 0.9s; }
+.jump-letters span:nth-child(11) { animation-delay: 1s; }
+
+.titulo-agua {
+    color: #199123; /* Verde para associar à sustentabilidade, do index */
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.texto {
+    font-size: 20px;
+    color: #424242; /* Cor de texto principal do index */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-card-agua {
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    /* Adicionado para consistência de estilo com o index.css */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Para garantir que ocupe o espaço do card */
+}
+
+.img-card-agua:hover {
+    transform: scale(1.01); /* Efeito de hover do index */
+}
+
+.texto-agua-card {
+    font-size: 0.95rem;
+    color: #666; /* Mantido, tom neutro */
+    text-align: center; /* Adicionado para centralizar o texto do card */
+}
+
+.img-slide-agua {
+    width: 1050px !important; /* Altura e largura fixas do carousel do index */
+    height: 500px !important;
+    object-fit: cover;
+    /* max-height: 500px; Removido, já que width/height são fixos */
+}
+
+/* Adicionando estilos de card do index que estavam faltando */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #8fbc8f !important; /* Borda verde clara do index */
+}
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #22b33f; /* Verde mais escuro para o título, do index */
+    text-align: center; /* Centraliza o título do card */
+}
+
+.texto-card-titulo { /* Se esta classe for usada para o título do card */
+    text-align: center;
+}
+
+.btn-outline-success { /* Assumindo que este é o botão para ser verde */
+    margin-left: 140px;
+    color: #13852a;
+    border-color: #386641;
+}
+
+.btn-outline-success:hover {
+    background-color: #8fbc8f;
+    border-color: #8fbc8f;
+    color: white;
+}
+
+/* agua.css */
+
+/* Estilos para os blocos de tópico destacados */
+.topico-destacado {
+    border: 1px solid #ced4da; /* Borda cinza clara como no producao.html */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo do bloco */
+    border-radius: 0.25rem; /* Cantos levemente arredondados */
+    /* Adicione quaisquer outras propriedades que você queira para este bloco, como background-color */
+    background-color: #ffffff; /* Fundo branco para os blocos, se desejar */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Sombra suave para destacar o bloco */
+}
+
+/* ... (seu CSS existente acima) ... */
+
+/* Estilos para o título dentro dos tópicos destacados */
+.titulo-producaos-card {
+    text-align: center; /* JÁ ESTAVA CENTRALIZADO, GARANTINDO AQUI */
+    font-size: 1.25rem;
+    color: #222421;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Estilos para o texto dentro dos tópicos destacados */
+.texto-producaos-card {
+    text-align: center; /* ESTA É A MUDANÇA PRINCIPAL PARA O TEXTO */
+    font-size: 0.95rem;
+    color: #424242;
+    line-height: 1.6;
+}
+
+/* ... (o restante do seu CSS abaixo) ... */
+
+/* Adicione também as animações, se ainda não estiverem no seu CSS */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adicionado para centralizar o corpo do texto do card, caso .texto-card-corpo não seja usada */
+.card-text {
+    text-align: center;
+}
+/* ... (seu CSS existente acima) ... */
+
+/* Nova classe para o botão "Para subir ao topo" */
+.btn-scroll-top {
+    color: #1a8b16; /* Cor do texto */
+    border-color: #1a8b16; /* Cor da borda */
+    /* Você pode adicionar outras propriedades que já existiam, como background-color ao passar o mouse */
+}
+
+.btn-scroll-top:hover {
+    background-color: #1a8b16;
+    color: white;
+    border-color: #1a8b16;
+}
+
+/* ... (o restante do seu CSS abaixo) ... */

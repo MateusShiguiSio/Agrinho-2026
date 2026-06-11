@@ -1,0 +1,388 @@
+body {
+   font-family: 'Roboto', sans-serif; /* Alterado para a fonte da página de energia */
+   margin: 0;
+   padding: 0;
+   background-color: #f9fbe7; /* Um tom de fundo levemente amarelado */
+   color: #424242;
+   line-height: 1.6;
+}
+
+.cabecalho {
+   background-color: #202020 !important;
+   padding: 2rem 0;
+   margin-bottom: 2rem;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-width: 3px;
+   border-style: solid;
+   border-color: rgb(52, 170, 125);
+}
+
+.cabecalho h1 {
+   font-size: 2.5rem; /* Menor que o original, para se adequar ao estilo de energia */
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   color: #ebe9e9; /* Cor escura para contraste no amarelo */
+}
+
+.cabecalho h3 {
+   color: #e7e5e5; /* Cor escura para contraste no amarelo */
+   font-size: 1.2rem;
+   font-style: normal; /* Removido itálico para seguir o estilo da página de energia */
+   text-shadow: 3px 5px 5px #000000;
+}
+
+.navbar {
+   background-color: rgba(212, 237, 218, 0.7) !important; /* Fundo verde claro mais transparente */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-nav .nav-link {
+   font-weight: bold !important; /* Texto em negrito */
+   color: #29c44d !important; /* Texto verde escuro para os links da navbar */
+}
+
+.navbar-nav .nav-link:hover {
+   font-weight: bold !important; /* Texto em negrito ao passar o mouse */
+   color: #28a846 !important; /* Texto verde mais escuro ao passar o mouse */
+}
+
+.navbar-nav .nav-link.active {
+   font-weight: bold !important; /* Texto em negrito no link ativo */
+   color: #198754 !important; /* Verde mais vibrante para o link ativo */
+}
+
+
+.titulo-destaque{
+   text-decoration: underline;
+   margin-left: 10px;
+   text-align: center;
+   width: 350px;
+   font-size: 50px;
+   margin-bottom: 20px;
+}
+
+.titulo-destaques{
+   text-align: center;
+   width: auto;
+   font-size: 70px;
+   margin-bottom: 20px;
+   color: #424242 !important;
+} 
+
+.texto-estiloso {
+   font-size: 20px;
+   margin-left: 20px;
+   text-align: center;
+}
+
+.card-body h5 {
+   color: #199123;
+}
+
+.img-agro {
+   border-radius: 15px;
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+}
+
+.image-fluids {
+height: 100px;
+}
+
+.img-card-custom {
+   max-height: 180px; /* Altura menor para se assemelhar ao estilo de energia */
+   object-fit: cover;
+   border-radius: 0.5rem 0.5rem 0 0; /* Arredondamento dos cards de energia */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+   transition: transform 0.2s ease-in-out;
+   width: 100%;
+}
+
+.img-card-custom:hover {
+   transform: scale(1.01);
+}
+.card {
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s ease-in-out;
+   border: 1px solid #8fbc8f !important; /* Borda verde clara */
+}
+
+.card-title {
+   margin-left: 180px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.5em;
+   color: #386641; /* Verde mais escuro para o título */
+}
+
+.btn-outline-warning {
+   color: #386641;
+   border-color: #386641;
+}
+
+.btn-outline-warning:hover {
+   background-color: #8fbc8f;
+   border-color: #8fbc8f;
+   color: white;
+}
+.typing-animation span {
+   opacity: 0;
+   }
+   
+
+.navbar {
+   background-color: rgba(212, 237, 218, 0.7) !important; /* Fundo verde claro mais transparente */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-nav .nav-link {
+   font-weight: bold !important; /* Texto em negrito */
+   color: #198754 !important; /* Texto verde escuro para os links da navbar */
+   margin-right: 20px;
+   padding: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+   font-weight: bold !important; /* Texto em negrito ao passar o mouse */
+   color: #155724 !important; /* Texto verde mais escuro ao passar o mouse */
+}
+
+.navbar-nav .nav-link.active {
+   font-weight: bold !important; /* Texto em negrito no link ativo */
+   color: #155724 !important; /* Verde mais vibrante para o link ativo */
+}
+
+/* Animações */
+.fade-in {
+   opacity: 0;
+   transition: opacity 1s ease-out;
+}
+
+.fade-in.show {
+   opacity: 1;
+}
+
+.slide-in-left {
+   transform: translateX(-50px);
+   opacity: 0;
+   transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-left.show {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+/* Animation Keyframes */
+@keyframes slideInFromRight {
+   0% {
+     transform: translateX(100%); /* Start completely off to the right */
+     opacity: 0; /* Start completely transparent */
+   }
+   100% {
+     transform: translateX(0); /* End at its original position */
+     opacity: 1; /* End fully opaque */
+   }
+ }
+ 
+ /* Apply the animation to the navbar */
+ .navbar-slide-in {
+   animation: slideInFromRight 1s ease-out forwards; /* 1s duration, ease-out timing, keep final state */
+   /* Initially hide the navbar to prevent flicker before animation */
+   transform: translateX(100%);
+   opacity: 0;
+ }
+
+@keyframes typeWriter {
+   to {
+       opacity: 1;
+   }
+}
+
+.fade-in-text {
+   color: #0d8529;
+   opacity: 0;
+   animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+.jump-letters {
+   display: inline-block; /* Para que os spans fiquem lado a lado e possamos animá-los */
+}
+
+.jump-letters span {
+   font-size: 80px;
+   display: inline-block; /* Permite aplicar transformações em cada letra */
+   animation: jump 0.5s ease-in-out infinite alternate; /* Define a animação */
+   text-shadow: 5px 10px 5px #000000;
+}
+
+/* Define um atraso diferente para cada letra criar o efeito de onda */
+.jump-letters span:nth-child(1) { animation-delay: 0s; }
+.jump-letters span:nth-child(2) { animation-delay: 0.1s; }
+.jump-letters span:nth-child(3) { animation-delay: 0.2s; }
+.jump-letters span:nth-child(4) { animation-delay: 0.3s; }
+.jump-letters span:nth-child(5) { animation-delay: 0.4s; }
+.jump-letters span:nth-child(6) { animation-delay: 0.5s; }
+.jump-letters span:nth-child(7) { animation-delay: 0.6s; }
+.jump-letters span:nth-child(8) { animation-delay: 0.7s; }
+.jump-letters span:nth-child(9) { animation-delay: 0.8s; }
+.jump-letters span:nth-child(10) { animation-delay: 0.9s; }
+.jump-letters span:nth-child(11) { animation-delay: 1s; }
+
+@keyframes jump {
+   0% {
+       transform: translateY(0);
+   }
+   100% {
+       transform: translateY(-10px); /* Ajuste a altura do "salto" */
+   }
+}
+
+.fixed-size-carousel-image {
+   width: 1050px !important;
+   height: 500px !important;
+   object-fit: cover; /* Para manter a proporção e cobrir o espaço */
+  }
+/* --- Animações Padrão (necessárias para o funcionamento) --- */
+
+/* Keyframes para Títulos Saltitantes (Bounce) */
+@keyframes bounceIn {
+   0% {
+       transform: scale(0.3);
+       opacity: 0;
+   }
+   50% {
+       transform: scale(1.05);
+       opacity: 1;
+   }
+   70% {
+       transform: scale(0.9);
+   }
+   100% {
+       transform: scale(1);
+       opacity: 1; /* Garante que o elemento termine visível */
+   }
+}
+
+/* Keyframes para Textos Pulando (Bounce In Text) */
+@keyframes bounceInText {
+   0% {
+       transform: scale(0.8);
+       opacity: 0;
+   }
+   50% {
+       transform: scale(1.05);
+       opacity: 1;
+   }
+   70% {
+       transform: scale(0.95);
+   }
+   100% {
+       transform: scale(1);
+       opacity: 1; /* Garante que o elemento termine visível */
+   }
+}
+
+/* Keyframes para Fade-in genérico */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+/* Keyframes para Títulos e Elementos Fading In e Escalando */
+@keyframes fadeInScale {
+   from {
+       opacity: 0;
+       transform: scale(0.9);
+   }
+   to {
+       opacity: 1;
+       transform: scale(1);
+   }
+}
+
+/* --- Aplicação das Animações aos Elementos da Página Inicial --- */
+
+/* Títulos Principais de Seção (como "Descobrindo o AGRINHO PARANÁ" e "Campo e Cidade") */
+.titulo-destaques {
+   opacity: 0; /* Começa invisível */
+   animation: bounceIn 1s ease-out forwards;
+   animation-delay: 0.5s; /* Atraso inicial */
+}
+
+/* Títulos Menores (como "A Essência da Zona Rural" e "A Essência das Áreas Urbanas") */
+.titulo-destaque {
+   opacity: 0; /* Começa invisível */
+   animation: bounceIn 1s ease-out forwards;
+   animation-delay: 0.8s; /* Atraso para aparecer depois dos títulos principais */
+}
+
+/* Textos Principais com Animação de Salto */
+.texto-estiloso {
+   opacity: 0; /* Começa invisível */
+   animation: bounceInText 1s ease-out forwards;
+   animation-delay: 1.2s; /* Atraso para aparecer depois dos títulos */
+}
+
+/* Ajustes de Atraso para Parágrafos Específicos */
+/* Para os parágrafos que já possuem `slide-in-left` no HTML, ajustamos o delay */
+.texto-estiloso.slide-in-left {
+   animation-delay: 1s; /* Valor base, ajuste conforme necessário */
+}
+
+.texto-estiloso.slide-in-left[style*="animation-delay: 0.6s"] {
+   animation-delay: 1s !important; /* Sobrescreve o delay do HTML */
+}
+
+.texto-estiloso.slide-in-left[style*="animation-delay: 0.8s"] {
+   animation-delay: 1s !important; /* Sobrescreve o delay do HTML */
+}
+
+.texto-estiloso.slide-in-left[style*="animation-delay: 0.9s"] {
+   animation-delay: 1s !important; /* Sobrescreve o delay do HTML */
+}
+
+
+/* Todas as Imagens (img-fluid) com Fade-in */
+.img-fluid {
+   opacity: 0; /* Começa invisível */
+   animation: fadeIn 1s ease-out forwards; /* Aplica a animação de fade-in */
+   animation-delay: 0.7s; /* Um pequeno atraso para aparecer depois do título principal */
+}
+
+/* --- Desativando o controle de opacidade e transformações do JavaScript para as classes afetadas --- */
+/* Isso é crucial para que as animações CSS tenham prioridade e os elementos não "sumam" ou resetem */
+.fade-in, .slide-in-left, .fade-in-text {
+   opacity: 0; /* Começa invisível, mas o CSS controla a animação */
+   transform: none; /* Reseta qualquer transformação inicial para o CSS controlar */
+   transition: none !important; /* Desativa transições do JS para que a animação CSS assuma */
+}
+
+/* Garante que o JavaScript não sobrescreva a opacidade final das animações CSS */
+.fade-in.show,
+.slide-in-left.show,
+.fade-in-text.show {
+   opacity: 1 !important; /* Força a opacidade 1 para elementos "mostrados" pelo JS, mas que o CSS anima */
+   transform: none !important; /* Remove transformações que o JS possa adicionar, deixando para o CSS */
+}
+
+/* Opcional: Para o footer, se quiser um fade-in no final */
+.footer {
+   opacity: 0;
+   animation: fadeIn 1s ease-out forwards;
+   animation-delay: 2.5s; /* Atraso para o footer aparecer no final */
+}
