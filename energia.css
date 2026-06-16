@@ -9,12 +9,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9fbe7; /* Fundo levemente amarelado do index */
+    background-color: #e4fce3; /* Fundo levemente amarelado do index */
     color: #424242; /* Cor de texto principal do index */
 }
 
 .cabecalho-energia {
-    background-color: #202020 !important; /* Mantido do index */
+    background-color: #155724!important; /* Mantido do index */
     padding: 2rem 0;
     margin-bottom: 2rem;
     border-width: 3px;

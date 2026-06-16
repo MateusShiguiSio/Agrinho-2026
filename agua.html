@@ -155,39 +155,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const fadeInElements = document.querySelectorAll('.fade-in-text');
-            fadeInElements.forEach(element => {
-                setTimeout(() => {
-                    element.classList.add('show');
-                }, 100);
-            });
-
-            const slideInRightElements = document.querySelectorAll('.slide-in-right');
-            slideInRightElements.forEach(element => {
-                const delay = parseFloat(element.style.animationDelay) || 0;
-                setTimeout(() => {
-                    element.classList.add('show');
-                }, delay * 1000 + 100);
-            });
-
-            const elementsToFadeIn = document.querySelectorAll('.fade-in-element');
-            elementsToFadeIn.forEach((element) => {
-                setTimeout(() => {
-                    element.classList.add('show');
-                }, 150);
-            });
-
-            const typingSubtitle = document.querySelector('.typing-animation');
-            if (typingSubtitle) {
-                const spansSubtitle = typingSubtitle.querySelectorAll('span');
-                spansSubtitle.forEach((span, index) => {
-                    span.style.animation = `typeWriter 0.09s ease-in-out forwards ${index * 0.03}s`;
-                });
-            }
-        });
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    
+    <script src="Java.js"></script>
+</body>
+</html>
 </body>
 
 </html>

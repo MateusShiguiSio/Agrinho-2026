@@ -65,7 +65,6 @@ body {
 /* --- Ajustes de Responsividade para Títulos Principais e de Seção --- */
 .titulo-destaque {
     text-decoration: underline;
-    /* ALTERADO: Removido margin-left fixo e width fixo para responsividade */
     margin-left: auto; /* Centraliza o elemento */
     margin-right: auto; /* Centraliza o elemento */
     text-align: center;
@@ -76,13 +75,12 @@ body {
 
 .titulo-destaques {
     text-align: center;
-    /* ALTERADO: Removido width fixo para responsividade */
+    color: #185d28;
     margin-left: auto; /* Centraliza o elemento */
     margin-right: auto; /* Centraliza o elemento */
     max-width: 95%; /* Limita a largura máxima para se ajustar à tela */
     font-size: 4.5rem; /* Ajustado para REM para responsividade */
     margin-bottom: 20px;
-    color: #424242 !important;
 }
 
 /* --- Media Queries para Títulos (ajuste de tamanho em telas menores) --- */

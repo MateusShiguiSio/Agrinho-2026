@@ -56,7 +56,7 @@
     <section class="py-5">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2 class="titulo-energia mb-4 slide-in-left">A Matriz Energética do Agro Sustentável</h2>
+          <h2 class="titulo-energias mb-4 slide-in-right">A Matriz Energética do Agro Sustentável</h2>
           <p class="texto-energia slide-in-left" style="animation-delay: 0.5s;">
             A busca por um futuro sustentável exige que a força do campo caminhe lado a lado com a inovação energética. 
             A transição para fontes de energia limpa e renovável no setor agrícola reduz a dependência de combustíveis fósseis, 
@@ -142,47 +142,13 @@
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Funções para adicionar a classe 'show' após um pequeno atraso
-      const animateElements = (selector, delay = 100) => {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(element => {
-          setTimeout(() => {
-            element.classList.add('show');
-          }, delay);
-        });
-      };
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 
-      animateElements('.fade-in');
-      animateElements('.slide-in-left');
-      animateElements('.fade-in-text');
-
-      // Animação de digitação para o subtítulo
-      const typingSubtitle = document.querySelector('.typing-animation');
-      if (typingSubtitle) {
-        const spansSubtitle = typingSubtitle.querySelectorAll('span');
-        spansSubtitle.forEach((span, index) => {
-          span.style.animation = `typeWriter 0.09s ease-in-out forwards ${index * 0.03}s`;
-        });
-      }
-
-      const jumpTitle = document.querySelector('.jump-letters');
-
-      const elementsToFadeIn = document.querySelectorAll('.fade-in-element');
-      elementsToFadeIn.forEach(element => {
-        element.classList.add('fade-in');
-      });
-
-      setTimeout(() => {
-        const cards = document.querySelectorAll('.fade-in-card');
-        cards.forEach(card => {
-          card.classList.add('show');
-        });
-      }, 150);
-
-    });
-  </script>
+<script src="Java.js"></script>
+</body>
+</html>
 
 </body>
 

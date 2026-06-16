@@ -57,7 +57,7 @@
   </nav>
   <main class="container my-5">
     <section class="py-5">
-      <h3 class="titulo-destaques mb-4 fade-in-text">Descobrindo o AGRINHO PARANÁ</h3>
+      <h3 class="titulo-destaques mb-4 text-success">Descobrindo o AGRINHO PARANÁ</h3>
       <div class="row align-items-center">
         <div class="col-md-6">
           <img src="./fotos/agrinho.png" alt="Logo AGRINHO" class="img-fluid rounded shadow-sm fade-in"
@@ -84,7 +84,7 @@
         </div>
       </div>
     </section>
-    <h3 class="titulo-destaques mb-4 fade-in-text">======== Produção e Natureza ========</h3>
+    <h3 class="titulo-destaques mb-4 fade-in-text">=== Produção e Natureza ===</h3>
     <section class="row pt-5 align-items-center">
       <div class="col-md-6">
         <div>
@@ -192,33 +192,12 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const fadeInElements = document.querySelectorAll('.fade-in');
-      fadeInElements.forEach(element => {
-        setTimeout(() => {
-          element.classList.add('show');
-        }, 100);
-      });
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+  crossorigin="anonymous"></script>
 
-      const slideInLeftElements = document.querySelectorAll('.slide-in-left');
-      slideInLeftElements.forEach(element => {
-        setTimeout(() => {
-          element.classList.add('show');
-        }, 100);
-      });
-
-      const typingTexts = document.querySelectorAll('.typing-animation');
-      typingTexts.forEach(typingText => {
-        const spans = typingText.querySelectorAll('span');
-        spans.forEach((span, index) => {
-          span.style.animation = `typeWriter 0.4s ease-in-out forwards ${index * 0.03}s`;
-        });
-      });
-    });
-  </script>
+<script src="Java.js"></script>
+</body>
+</html>
 </body>
 
 </html>
