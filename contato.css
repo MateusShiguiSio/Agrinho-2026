@@ -2,7 +2,7 @@ body {
    font-family: 'Roboto', sans-serif; /* Alterado para a fonte da página de energia */
    margin: 0;
    padding: 0;
-   background-color: #f9fbe7; /* Um tom de fundo levemente amarelado */
+    background-color: #e6fae5; /* Fundo levemente amarelado do index */
    color: #424242;
    line-height: 1.6;
 }
