@@ -8,14 +8,14 @@ body {
 }
 
 .cabecalho {
-   background-color: #202020 !important;
-   padding: 2rem 0;
-   margin-bottom: 2rem;
-   text-align: center;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   border-width: 3px;
-   border-style: solid;
-   border-color: rgb(52, 170, 125);
+   background-color: #0e4119!important; /* Mantido do index */
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(35, 116, 85); /* Mantido do index */
+    text-align: center; /* Adicionado para consistência com o cabecalho do index */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado para consistência */
 }
 
 .cabecalho h1 {
