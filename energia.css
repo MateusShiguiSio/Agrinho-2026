@@ -14,12 +14,12 @@ body {
 }
 
 .cabecalho-energia {
-    background-color: #155724!important; /* Mantido do index */
+    background-color: #0e4119!important; /* Mantido do index */
     padding: 2rem 0;
     margin-bottom: 2rem;
     border-width: 3px;
     border-style: solid;
-    border-color: rgb(52, 170, 125); /* Mantido do index */
+    border-color: rgb(35, 116, 85); /* Mantido do index */
     text-align: center; /* Adicionado para consistência com o cabecalho do index */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado para consistência */
 }
